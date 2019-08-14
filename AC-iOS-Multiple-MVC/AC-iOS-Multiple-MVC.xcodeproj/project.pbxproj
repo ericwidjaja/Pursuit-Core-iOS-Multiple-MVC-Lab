@@ -13,6 +13,7 @@
 		DE07F5661FAB611300DA3ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE07F5651FAB611300DA3ABA /* Assets.xcassets */; };
 		DE07F5691FAB611300DA3ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE07F5671FAB611300DA3ABA /* LaunchScreen.storyboard */; };
 		DE07F5711FAB627600DA3ABA /* ZooAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE07F5701FAB627600DA3ABA /* ZooAnimal.swift */; };
+		DF01D7EE2303A9ED008DD328 /* AnimalsClassification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01D7ED2303A9ED008DD328 /* AnimalsClassification.swift */; };
 		DF28924F230355AF00D9F18E /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28924E230355AF00D9F18E /* AnimalTableViewCell.swift */; };
 		DF28925123035DB200D9F18E /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28925023035DB200D9F18E /* AnimalDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		DE07F5681FAB611300DA3ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE07F56A1FAB611300DA3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE07F5701FAB627600DA3ABA /* ZooAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnimal.swift; sourceTree = "<group>"; };
+		DF01D7ED2303A9ED008DD328 /* AnimalsClassification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsClassification.swift; sourceTree = "<group>"; };
 		DF28924E230355AF00D9F18E /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 		DF28925023035DB200D9F18E /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,17 +62,42 @@
 		DE07F55D1FAB611300DA3ABA /* AC-iOS-Multiple-MVC */ = {
 			isa = PBXGroup;
 			children = (
-				DE07F5701FAB627600DA3ABA /* ZooAnimal.swift */,
-				DE07F5601FAB611300DA3ABA /* ViewController.swift */,
+				DF01D7EF2303AB67008DD328 /* Models */,
 				DE07F5621FAB611300DA3ABA /* Main.storyboard */,
-				DF28925023035DB200D9F18E /* AnimalDetailViewController.swift */,
+				DF01D7EB2303A8F8008DD328 /* ViewController */,
 				DF28924E230355AF00D9F18E /* AnimalTableViewCell.swift */,
-				DE07F55E1FAB611300DA3ABA /* AppDelegate.swift */,
+				DF01D7EC2303A951008DD328 /* SupportingFiles */,
 				DE07F5651FAB611300DA3ABA /* Assets.xcassets */,
-				DE07F5671FAB611300DA3ABA /* LaunchScreen.storyboard */,
 				DE07F56A1FAB611300DA3ABA /* Info.plist */,
 			);
 			path = "AC-iOS-Multiple-MVC";
+			sourceTree = "<group>";
+		};
+		DF01D7EB2303A8F8008DD328 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE07F5601FAB611300DA3ABA /* ViewController.swift */,
+				DF28925023035DB200D9F18E /* AnimalDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DF01D7EC2303A951008DD328 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DE07F55E1FAB611300DA3ABA /* AppDelegate.swift */,
+				DE07F5671FAB611300DA3ABA /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DF01D7EF2303AB67008DD328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE07F5701FAB627600DA3ABA /* ZooAnimal.swift */,
+				DF01D7ED2303A9ED008DD328 /* AnimalsClassification.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +177,7 @@
 				DF28924F230355AF00D9F18E /* AnimalTableViewCell.swift in Sources */,
 				DE07F5711FAB627600DA3ABA /* ZooAnimal.swift in Sources */,
 				DE07F55F1FAB611300DA3ABA /* AppDelegate.swift in Sources */,
+				DF01D7EE2303A9ED008DD328 /* AnimalsClassification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
